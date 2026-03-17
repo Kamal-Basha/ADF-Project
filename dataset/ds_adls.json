@@ -1,0 +1,22 @@
+{
+	"name": "ds_adls",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sinktoAzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "dbo.customers.parquet",
+				"folderPath": "sink",
+				"fileSystem": "rawdatafromsql"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
