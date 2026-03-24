@@ -307,7 +307,8 @@
 						"fileSystem": "zipped"
 					},
 					"compression": {
-						"type": "ZipDeflate"
+						"type": "ZipDeflate",
+						"level": "Optimal"
 					}
 				}
 			},
@@ -539,6 +540,7 @@
 								"value": "@activity('Getmetadatatzipped').output.childItems",
 								"type": "Expression"
 							},
+							"isSequential": true,
 							"activities": [
 								{
 									"name": "Copy data1",
