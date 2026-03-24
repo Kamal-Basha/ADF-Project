@@ -1,0 +1,26 @@
+{
+	"name": "ds_pip2_data_from_source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_inputstg",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"filename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().filename",
+					"type": "Expression"
+				},
+				"fileSystem": "output"
+			}
+		}
+	}
+}

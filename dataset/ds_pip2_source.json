@@ -1,0 +1,17 @@
+{
+	"name": "ds_pip2_source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_inputstg",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "output"
+			}
+		}
+	}
+}

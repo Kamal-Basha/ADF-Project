@@ -1,0 +1,30 @@
+{
+	"name": "ds_pip2_sink_to_zipped",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_inputstg",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"filename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat(dataset().filename,'.zip')",
+					"type": "Expression"
+				},
+				"fileSystem": "zipped"
+			},
+			"compression": {
+				"type": "ZipDeflate",
+				"level": "Optimal"
+			}
+		}
+	}
+}
