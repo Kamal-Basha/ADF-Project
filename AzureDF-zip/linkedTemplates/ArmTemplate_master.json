@@ -11,9 +11,17 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_inputstg'"
 		},
+		"ls_sinkto zipped_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_sinkto zipped'"
+		},
 		"ls_sinktooutput2_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_sinktooutput2'"
+		},
+		"ls_sinktozipped_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_sinktozipped'"
 		},
 		"ls_zipfrominput_accountKey": {
 			"type": "secureString",
@@ -23,19 +31,19 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_zipped'"
 		},
-		"ls_sinktozipped_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'ls_sinktozipped'"
-		},
-		"ls_sinkto zipped_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'ls_sinkto zipped'"
-		},
 		"ls_inputstg_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://zipadf.dfs.core.windows.net/"
 		},
+		"ls_sinkto zipped_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://zipadf.dfs.core.windows.net/"
+		},
 		"ls_sinktooutput2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://zipadf.dfs.core.windows.net/"
+		},
+		"ls_sinktozipped_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://zipadf.dfs.core.windows.net/"
 		},
@@ -44,14 +52,6 @@
 			"defaultValue": "https://zipadf.dfs.core.windows.net/"
 		},
 		"ls_zipped_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://zipadf.dfs.core.windows.net/"
-		},
-		"ls_sinktozipped_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://zipadf.dfs.core.windows.net/"
-		},
-		"ls_sinkto zipped_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://zipadf.dfs.core.windows.net/"
 		},
@@ -85,8 +85,14 @@
 					"ls_inputstg_accountKey": {
 						"value": "[parameters('ls_inputstg_accountKey')]"
 					},
+					"ls_sinkto zipped_accountKey": {
+						"value": "[parameters('ls_sinkto zipped_accountKey')]"
+					},
 					"ls_sinktooutput2_accountKey": {
 						"value": "[parameters('ls_sinktooutput2_accountKey')]"
+					},
+					"ls_sinktozipped_accountKey": {
+						"value": "[parameters('ls_sinktozipped_accountKey')]"
 					},
 					"ls_zipfrominput_accountKey": {
 						"value": "[parameters('ls_zipfrominput_accountKey')]"
@@ -94,29 +100,23 @@
 					"ls_zipped_accountKey": {
 						"value": "[parameters('ls_zipped_accountKey')]"
 					},
-					"ls_sinktozipped_accountKey": {
-						"value": "[parameters('ls_sinktozipped_accountKey')]"
-					},
-					"ls_sinkto zipped_accountKey": {
-						"value": "[parameters('ls_sinkto zipped_accountKey')]"
-					},
 					"ls_inputstg_properties_typeProperties_url": {
 						"value": "[parameters('ls_inputstg_properties_typeProperties_url')]"
 					},
+					"ls_sinkto zipped_properties_typeProperties_url": {
+						"value": "[parameters('ls_sinkto zipped_properties_typeProperties_url')]"
+					},
 					"ls_sinktooutput2_properties_typeProperties_url": {
 						"value": "[parameters('ls_sinktooutput2_properties_typeProperties_url')]"
+					},
+					"ls_sinktozipped_properties_typeProperties_url": {
+						"value": "[parameters('ls_sinktozipped_properties_typeProperties_url')]"
 					},
 					"ls_zipfrominput_properties_typeProperties_url": {
 						"value": "[parameters('ls_zipfrominput_properties_typeProperties_url')]"
 					},
 					"ls_zipped_properties_typeProperties_url": {
 						"value": "[parameters('ls_zipped_properties_typeProperties_url')]"
-					},
-					"ls_sinktozipped_properties_typeProperties_url": {
-						"value": "[parameters('ls_sinktozipped_properties_typeProperties_url')]"
-					},
-					"ls_sinkto zipped_properties_typeProperties_url": {
-						"value": "[parameters('ls_sinkto zipped_properties_typeProperties_url')]"
 					}
 				}
 			},
