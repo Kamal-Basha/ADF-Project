@@ -1,0 +1,27 @@
+{
+	"name": "sinktooutput2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_inputstg",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"foldername": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@split(dataset().foldername,'.')[0]",
+					"type": "Expression"
+				},
+				"fileSystem": "output"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

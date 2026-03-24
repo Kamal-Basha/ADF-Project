@@ -1,0 +1,9 @@
+{
+	"name": "AzureDF-zip",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8af49053-ca36-4f08-879b-593ded8a97fc",
+		"tenantId": "dc8ee96e-80b5-4fba-9856-0f5a639bf615"
+	}
+}

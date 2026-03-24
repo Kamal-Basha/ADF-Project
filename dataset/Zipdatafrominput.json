@@ -1,0 +1,31 @@
+{
+	"name": "Zipdatafrominput",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_inputstg",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"filename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().filename",
+					"type": "Expression"
+				},
+				"fileSystem": "input"
+			},
+			"compression": {
+				"type": "ZipDeflate",
+				"level": "Optimal"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
