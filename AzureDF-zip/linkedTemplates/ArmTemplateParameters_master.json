@@ -14,6 +14,15 @@
 		"ls_zipfrominput_accountKey": {
 			"value": ""
 		},
+		"ls_zipped_accountKey": {
+			"value": ""
+		},
+		"ls_sinktozipped_accountKey": {
+			"value": ""
+		},
+		"ls_sinkto zipped_accountKey": {
+			"value": ""
+		},
 		"ls_inputstg_properties_typeProperties_url": {
 			"value": "https://zipadf.dfs.core.windows.net/"
 		},
@@ -21,6 +30,15 @@
 			"value": "https://zipadf.dfs.core.windows.net/"
 		},
 		"ls_zipfrominput_properties_typeProperties_url": {
+			"value": "https://zipadf.dfs.core.windows.net/"
+		},
+		"ls_zipped_properties_typeProperties_url": {
+			"value": "https://zipadf.dfs.core.windows.net/"
+		},
+		"ls_sinktozipped_properties_typeProperties_url": {
+			"value": "https://zipadf.dfs.core.windows.net/"
+		},
+		"ls_sinkto zipped_properties_typeProperties_url": {
 			"value": "https://zipadf.dfs.core.windows.net/"
 		},
 		"containerUri": {
