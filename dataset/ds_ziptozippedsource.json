@@ -1,0 +1,26 @@
+{
+	"name": "ds_ziptozippedsource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sinktozipped",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"foldername": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@dataset().foldername",
+					"type": "Expression"
+				},
+				"fileSystem": "zipped"
+			}
+		}
+	}
+}
