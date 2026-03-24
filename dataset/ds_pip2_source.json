@@ -5,12 +5,21 @@
 			"referenceName": "ls_inputstg",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"filesystem": {
+				"type": "string",
+				"defaultValue": "output"
+			}
+		},
 		"annotations": [],
 		"type": "Binary",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileSystem": "output"
+				"fileSystem": {
+					"value": "@dataset().filesystem",
+					"type": "Expression"
+				}
 			}
 		}
 	}
