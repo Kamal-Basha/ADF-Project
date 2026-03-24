@@ -22,7 +22,8 @@
 				"fileSystem": "zipped"
 			},
 			"compression": {
-				"type": "ZipDeflate"
+				"type": "ZipDeflate",
+				"level": "Optimal"
 			}
 		}
 	}
